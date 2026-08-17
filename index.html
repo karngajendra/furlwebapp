@@ -174,9 +174,30 @@
         <div class="phone-screen">
           <div class="ss" aria-hidden="true">
             <div class="ss-app">
-              <div class="ss-appbar"><span class="ss-yt"><i></i></span><b>Video</b></div>
-              <div class="ss-video"><span class="play"></span><span class="pbar"></span></div>
-              <div class="ss-lines"><i></i><i></i><i></i></div>
+              <div class="ss-appbar"><span class="ss-yt"><i></i></span><b>Video</b><span class="ss-abar-ic"><i></i><i></i><i></i></span></div>
+              <div class="ss-video">
+                <img src="/assets/img/video-still.webp" alt="" width="560" height="315" loading="eager">
+                <span class="play"></span>
+                <span class="ptime">0:18 / 12:04</span>
+                <span class="pbar"><i></i><u></u></span>
+              </div>
+              <div class="ss-vinfo">
+                <div class="ss-vtitle">One-Pan Miso Butter Noodles — 15 Minute Dinner</div>
+                <div class="ss-vmeta">128K views · 3 days ago</div>
+                <div class="ss-chan"><span class="ss-av">S</span><span class="ss-chname">Sunday Kitchen</span><span class="ss-sub">Subscribe</span></div>
+                <div class="ss-acts"><span>👍 4.1K</span><span>↗ Share</span><span>⤓ Save</span></div>
+                <div class="ss-next"><span class="ss-thumb"></span><span class="ss-next-lines"><i></i><i></i></span></div>
+                <div class="ss-next"><span class="ss-thumb" style="background:linear-gradient(140deg,#C8CFD8,#8FA0B4)"></span><span class="ss-next-lines"><i></i><i></i></span></div>
+                <div class="ss-next"><span class="ss-thumb" style="background:linear-gradient(140deg,#D8C5CF,#B48CA0)"></span><span class="ss-next-lines"><i></i><i></i></span></div>
+                <div class="ss-next"><span class="ss-thumb" style="background:linear-gradient(140deg,#C5D8CB,#8CB49A)"></span><span class="ss-next-lines"><i></i><i></i></span></div>
+                <div class="ss-next"><span class="ss-thumb" style="background:linear-gradient(140deg,#D8D2C5,#B4A88C)"></span><span class="ss-next-lines"><i></i><i></i></span></div>
+              </div>
+              <div class="ss-tabbar">
+                <span class="on"><i></i>Home</span>
+                <span><i></i>Shorts</span>
+                <span><i></i>Subs</span>
+                <span><i></i>You</span>
+              </div>
             </div>
             <div class="ss-scrim"></div>
             <div class="ss-sheet">
@@ -212,39 +233,68 @@
   <p class="marquee-label rv">Recognizes 50+ sources automatically</p>
   <div class="marquee rv">
     <div class="marquee-track">
-      <!-- track duplicated for seamless loop -->
-      <span class="src-chip"><span class="sdot" style="background:#E1306C"></span>Instagram</span>
-      <span class="src-chip"><span class="sdot" style="background:#25F4EE"></span>TikTok</span>
-      <span class="src-chip"><span class="sdot" style="background:#FF0033"></span>YouTube</span>
-      <span class="src-chip"><span class="sdot" style="background:#FF4500"></span>Reddit</span>
-      <span class="src-chip"><span class="sdot" style="background:#E60023"></span>Pinterest</span>
-      <span class="src-chip"><span class="sdot" style="background:#1DB954"></span>Spotify</span>
-      <span class="src-chip"><span class="sdot" style="background:#251F28"></span>X</span>
-      <span class="src-chip"><span class="sdot" style="background:#101010"></span>Threads</span>
-      <span class="src-chip"><span class="sdot" style="background:#FF6719"></span>Substack</span>
-      <span class="src-chip"><span class="sdot" style="background:#02B875"></span>Medium</span>
-      <span class="src-chip"><span class="sdot" style="background:#25D366"></span>WhatsApp</span>
-      <span class="src-chip"><span class="sdot" style="background:#229ED9"></span>Telegram</span>
-      <span class="src-chip"><span class="sdot" style="background:#0A66C2"></span>LinkedIn</span>
-      <span class="src-chip"><span class="sdot" style="background:#FFFC00;box-shadow:inset 0 0 0 1px #d8d5a2"></span>Snapchat</span>
-      <span class="src-chip"><span class="sdot" style="background:#1877F2"></span>Facebook</span>
+      <span class="src-chip"><img src="/assets/img/src/instagram.webp" alt="" width="20" height="20" loading="lazy">Instagram</span>
+      <span class="src-chip"><img src="/assets/img/src/tiktok.webp" alt="" width="20" height="20" loading="lazy">TikTok</span>
+      <span class="src-chip"><img src="/assets/img/src/youtube.webp" alt="" width="20" height="20" loading="lazy">YouTube</span>
+      <span class="src-chip"><img src="/assets/img/src/reddit.webp" alt="" width="20" height="20" loading="lazy">Reddit</span>
+      <span class="src-chip"><img src="/assets/img/src/pinterest.webp" alt="" width="20" height="20" loading="lazy">Pinterest</span>
+      <span class="src-chip"><img src="/assets/img/src/spotify.webp" alt="" width="20" height="20" loading="lazy">Spotify</span>
+      <span class="src-chip"><img src="/assets/img/src/twitter.webp" alt="" width="20" height="20" loading="lazy">X</span>
+      <span class="src-chip"><img src="/assets/img/src/threads.webp" alt="" width="20" height="20" loading="lazy">Threads</span>
+      <span class="src-chip"><img src="/assets/img/src/substack.webp" alt="" width="20" height="20" loading="lazy">Substack</span>
+      <span class="src-chip"><img src="/assets/img/src/medium.webp" alt="" width="20" height="20" loading="lazy">Medium</span>
+      <span class="src-chip"><img src="/assets/img/src/whatsapp.webp" alt="" width="20" height="20" loading="lazy">WhatsApp</span>
+      <span class="src-chip"><img src="/assets/img/src/telegram.webp" alt="" width="20" height="20" loading="lazy">Telegram</span>
+      <span class="src-chip"><img src="/assets/img/src/linkedin.webp" alt="" width="20" height="20" loading="lazy">LinkedIn</span>
+      <span class="src-chip"><img src="/assets/img/src/facebook.webp" alt="" width="20" height="20" loading="lazy">Facebook</span>
       <span class="src-chip"><span class="sdot" style="background:#8E4A9E"></span>+ any link</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#E1306C"></span>Instagram</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#25F4EE"></span>TikTok</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#FF0033"></span>YouTube</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#FF4500"></span>Reddit</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#E60023"></span>Pinterest</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#1DB954"></span>Spotify</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#251F28"></span>X</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#101010"></span>Threads</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#FF6719"></span>Substack</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#02B875"></span>Medium</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#25D366"></span>WhatsApp</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#229ED9"></span>Telegram</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#0A66C2"></span>LinkedIn</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#FFFC00;box-shadow:inset 0 0 0 1px #d8d5a2"></span>Snapchat</span>
-      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#1877F2"></span>Facebook</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/instagram.webp" alt="" width="20" height="20" loading="lazy">Instagram</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/tiktok.webp" alt="" width="20" height="20" loading="lazy">TikTok</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/youtube.webp" alt="" width="20" height="20" loading="lazy">YouTube</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/reddit.webp" alt="" width="20" height="20" loading="lazy">Reddit</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/pinterest.webp" alt="" width="20" height="20" loading="lazy">Pinterest</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/spotify.webp" alt="" width="20" height="20" loading="lazy">Spotify</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/twitter.webp" alt="" width="20" height="20" loading="lazy">X</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/threads.webp" alt="" width="20" height="20" loading="lazy">Threads</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/substack.webp" alt="" width="20" height="20" loading="lazy">Substack</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/medium.webp" alt="" width="20" height="20" loading="lazy">Medium</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/whatsapp.webp" alt="" width="20" height="20" loading="lazy">WhatsApp</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/telegram.webp" alt="" width="20" height="20" loading="lazy">Telegram</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/linkedin.webp" alt="" width="20" height="20" loading="lazy">LinkedIn</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/facebook.webp" alt="" width="20" height="20" loading="lazy">Facebook</span>
       <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#8E4A9E"></span>+ any link</span>
+    </div>
+  </div>
+  <div class="marquee rv marquee-2">
+    <div class="marquee-track rev">
+      <span class="src-chip"><img src="/assets/img/src/netflix.webp" alt="" width="20" height="20" loading="lazy">Netflix</span>
+      <span class="src-chip"><img src="/assets/img/src/amazon.webp" alt="" width="20" height="20" loading="lazy">Amazon</span>
+      <span class="src-chip"><img src="/assets/img/src/notion.webp" alt="" width="20" height="20" loading="lazy">Notion</span>
+      <span class="src-chip"><img src="/assets/img/src/github.webp" alt="" width="20" height="20" loading="lazy">GitHub</span>
+      <span class="src-chip"><img src="/assets/img/src/google_maps.webp" alt="" width="20" height="20" loading="lazy">Google Maps</span>
+      <span class="src-chip"><img src="/assets/img/src/airbnb.webp" alt="" width="20" height="20" loading="lazy">Airbnb</span>
+      <span class="src-chip"><img src="/assets/img/src/etsy.webp" alt="" width="20" height="20" loading="lazy">Etsy</span>
+      <span class="src-chip"><img src="/assets/img/src/imdb.webp" alt="" width="20" height="20" loading="lazy">IMDb</span>
+      <span class="src-chip"><img src="/assets/img/src/goodreads.webp" alt="" width="20" height="20" loading="lazy">Goodreads</span>
+      <span class="src-chip"><img src="/assets/img/src/soundcloud.webp" alt="" width="20" height="20" loading="lazy">SoundCloud</span>
+      <span class="src-chip"><img src="/assets/img/src/twitch.webp" alt="" width="20" height="20" loading="lazy">Twitch</span>
+      <span class="src-chip"><img src="/assets/img/src/nytimes.webp" alt="" width="20" height="20" loading="lazy">NY Times</span>
+      <span class="src-chip"><img src="/assets/img/src/wikipedia.webp" alt="" width="20" height="20" loading="lazy">Wikipedia</span>
+      <span class="src-chip"><img src="/assets/img/src/apple_podcasts.webp" alt="" width="20" height="20" loading="lazy">Podcasts</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/netflix.webp" alt="" width="20" height="20" loading="lazy">Netflix</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/amazon.webp" alt="" width="20" height="20" loading="lazy">Amazon</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/notion.webp" alt="" width="20" height="20" loading="lazy">Notion</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/github.webp" alt="" width="20" height="20" loading="lazy">GitHub</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/google_maps.webp" alt="" width="20" height="20" loading="lazy">Google Maps</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/airbnb.webp" alt="" width="20" height="20" loading="lazy">Airbnb</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/etsy.webp" alt="" width="20" height="20" loading="lazy">Etsy</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/imdb.webp" alt="" width="20" height="20" loading="lazy">IMDb</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/goodreads.webp" alt="" width="20" height="20" loading="lazy">Goodreads</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/soundcloud.webp" alt="" width="20" height="20" loading="lazy">SoundCloud</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/twitch.webp" alt="" width="20" height="20" loading="lazy">Twitch</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/nytimes.webp" alt="" width="20" height="20" loading="lazy">NY Times</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/wikipedia.webp" alt="" width="20" height="20" loading="lazy">Wikipedia</span>
+      <span class="src-chip" aria-hidden="true"><img src="/assets/img/src/apple_podcasts.webp" alt="" width="20" height="20" loading="lazy">Podcasts</span>
     </div>
   </div>
 </section>
@@ -254,7 +304,7 @@
   <div class="wrap">
     <div class="section-head center rv">
       <span class="eyebrow"><span class="dot"></span> How it works</span>
-      <h2>Two taps. <span class="serif-i accent-word">That's the whole app.</span></h2>
+      <h2>Two taps to save. <span class="serif-i accent-word">Seconds to find.</span></h2>
       <p>No app-switching, no copy-pasting links, no losing your place in the feed.</p>
     </div>
     <div class="steps">
