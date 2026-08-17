@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Furl — Save it. Find it. Use it. | One private library for everything you save</title>
+<meta name="description" content="Furl saves reels, videos, articles & recipes from any app in two taps — no account needed. One beautiful, private library on your phone. Your first 100 saves are free, forever.">
+<link rel="canonical" href="https://getfurl.web.app/">
+<meta name="theme-color" content="#7E4290">
+<meta name="apple-mobile-web-app-title" content="Furl">
+<meta name="application-name" content="Furl">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Furl">
+<meta property="og:title" content="Furl — Save it. Find it. Use it.">
+<meta property="og:description" content="Save reels, videos, articles & recipes from any app in two taps — no account needed. One private library on your phone. First 100 saves free, forever.">
+<meta property="og:url" content="https://getfurl.web.app/">
+<meta property="og:image" content="https://getfurl.web.app/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Furl — one private library for everything you save">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Furl — Save it. Find it. Use it.">
+<meta name="twitter:description" content="Save reels, videos, articles & recipes from any app in two taps — no account, no feed, no tracking. First 100 saves free, forever.">
+<meta name="twitter:image" content="https://getfurl.web.app/assets/img/og-image.jpg">
+
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preload" href="/assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/PlusJakartaSans.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="/assets/css/site.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://getfurl.web.app/#org",
+      "name": "Protalogic",
+      "url": "https://getfurl.web.app/",
+      "logo": "https://getfurl.web.app/assets/img/icon-512.png",
+      "email": "protalogic@gmail.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://getfurl.web.app/#website",
+      "url": "https://getfurl.web.app/",
+      "name": "Furl",
+      "publisher": { "@id": "https://getfurl.web.app/#org" }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://getfurl.web.app/#app",
+      "name": "Furl",
+      "alternateName": "Furl — Save it. Find it. Use it.",
+      "description": "Furl saves reels, videos, articles and recipes from any app into one beautiful, private library on your phone. No account, no feed, no tracking. First 100 saves free, forever.",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "ProductivityApplication",
+      "image": "https://getfurl.web.app/assets/img/og-image.jpg",
+      "author": { "@id": "https://getfurl.web.app/#org" },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free — your first 100 saves are free, forever. Furl Pro unlocks unlimited saves via a yearly subscription or one-time lifetime purchase."
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://getfurl.web.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Furl free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes — your first 100 saves are free, forever. Furl Pro unlocks unlimited saves with a small yearly subscription or a one-time lifetime purchase." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an account to use Furl?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Furl has no accounts and no sign-in. Your library lives on your device and is quietly backed up — to iCloud on iPhone and via Android's automatic backup on Android." }
+        },
+        {
+          "@type": "Question",
+          "name": "What can I save with Furl?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Anything you can share: reels, videos, articles, products, podcasts, playlists and notes. Furl recognizes 50+ sources automatically — Instagram, TikTok, YouTube, Reddit, Pinterest, Spotify, X and many more — and files each save with its preview, title and source." }
+        },
+        {
+          "@type": "Question",
+          "name": "How does saving work?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Tap Share in any app, then tap Save. Furl's share sheet appears right where you are — no app-switching, no losing your place in the feed. Pick a folder as you save, or let it land in your Inbox and sort later." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data private?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Furl is private by default: no account, no feed, and no tracking you around the web. What you save is stored on your device, and a private Hidden folder behind Face ID keeps some saves just for you." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which platforms does Furl support?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Furl is built for iPhone, iPad and Android phones and tablets. It is launching soon on the App Store and Google Play." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="nav-logo" href="/" aria-label="Furl home">
+      <picture><source srcset="/assets/img/wordmark.webp" media="(prefers-color-scheme: dark)"><img src="/assets/img/wordmark-light.webp" alt="Furl" width="59" height="30"></picture>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="/#features">Features</a>
+      <a href="/#privacy">Privacy</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/contact">Contact</a>
+      <a class="nav-cta" href="/#download">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+  </div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow rv"><span class="dot"></span> Private · No account needed</span>
+      <h1 class="rv rv-d1">Save it. <span class="serif-i accent-word">Find it.</span><br>Use it.</h1>
+      <p class="hero-sub rv rv-d2">Reels in one app, videos in another, articles in a chat with yourself? Furl gathers everything you save into one beautiful, private library — from any app, in two taps.</p>
+      <div class="store-badges rv rv-d3" id="download">
+        <a class="badge" href="https://apps.apple.com/" target="_blank" rel="noopener" aria-label="Download on the App Store (coming soon)">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c-.03-2.89 2.36-4.28 2.47-4.35-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-1-1.94.03-3.72 1.13-4.72 2.86-2.01 3.49-.51 8.66 1.45 11.49.96 1.39 2.1 2.94 3.6 2.89 1.44-.06 1.99-.93 3.73-.93s2.23.93 3.76.9c1.55-.03 2.53-1.41 3.48-2.8 1.09-1.61 1.54-3.17 1.57-3.25-.03-.02-3-1.15-3.02-4.59zM14.17 4.04c.79-.96 1.33-2.29 1.18-3.62-1.14.05-2.53.76-3.35 1.72-.73.85-1.38 2.21-1.21 3.51 1.28.1 2.58-.65 3.38-1.61z"/></svg>
+          <span class="b-txt"><span class="b-top">Coming soon on the</span><span class="b-bot">App Store</span></span>
+        </a>
+        <a class="badge" href="https://play.google.com/store/apps" target="_blank" rel="noopener" aria-label="Get it on Google Play (coming soon)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#01D3FE" d="M3.6 1.8 13.7 12 3.6 22.2c-.36-.2-.6-.59-.6-1.08V2.88c0-.49.24-.88.6-1.08z"/><path fill="#FFCE00" d="m17.1 8.6 -3.4 3.4 -10.1-10.2c.16-.09.35-.14.55-.14.22 0 .45.06.67.19l12.28 6.75z"/><path fill="#F63449" d="M17.1 15.4 4.82 22.15c-.22.13-.45.19-.67.19-.2 0-.39-.05-.55-.14l10.1-10.2 3.4 3.4z"/><path fill="#00E370" d="m20.75 13.39 -3.65 2.01-3.4-3.4 3.4-3.4 3.65 2.01c1.03.57 1.03 2.21 0 2.78z"/></svg>
+          <span class="b-txt"><span class="b-top">Coming soon on</span><span class="b-bot">Google Play</span></span>
+        </a>
+      </div>
+      <p class="hero-note rv rv-d4">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F0B24A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg>
+        Your first 100 saves are free, forever.
+      </p>
+    </div>
+
+    <div class="stage rv rv-d2">
+      <!-- back phone: home screenshot -->
+      <div class="phone phone-back" aria-hidden="true">
+        <div class="phone-screen">
+          <img src="/assets/img/shot-home.webp" alt="" loading="eager" width="720" height="1565">
+        </div>
+      </div>
+      <!-- front phone: animated share sheet -->
+      <div class="phone phone-front" role="img" aria-label="Furl's share sheet saving a video into the Recipes folder">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-screen">
+          <div class="ss" aria-hidden="true">
+            <div class="ss-app">
+              <div class="ss-appbar"><span class="ss-yt"><i></i></span><b>Video</b></div>
+              <div class="ss-video"><span class="play"></span><span class="pbar"></span></div>
+              <div class="ss-lines"><i></i><i></i><i></i></div>
+            </div>
+            <div class="ss-scrim"></div>
+            <div class="ss-sheet">
+              <div class="ss-grab"></div>
+              <div class="ss-title">Save to Furl</div>
+              <div class="ss-url">
+                <span class="ic"><span class="ss-yt"><i></i></span></span>
+                <span><span class="host">youtu.be</span><br><span class="path">/one-pan-noodles</span></span>
+              </div>
+              <div class="ss-cat"><span class="lab">CATEGORY</span><span class="sel">Recipes</span></div>
+              <div class="ss-chips">
+                <span class="ss-chip">Inbox</span>
+                <span class="ss-chip will-select">Recipes</span>
+                <span class="ss-chip">Watch Later</span>
+                <span class="ss-chip">Travel</span>
+                <span class="ss-chip">🔒 Hidden</span>
+              </div>
+              <div class="ss-save">Save</div>
+            </div>
+            <div class="ss-toast">
+              <span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
+              Saved to Recipes
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SOURCES MARQUEE ============================== -->
+<section class="marquee-band" aria-label="Sources Furl recognizes">
+  <p class="marquee-label rv">Recognizes 50+ sources automatically</p>
+  <div class="marquee rv">
+    <div class="marquee-track">
+      <!-- track duplicated for seamless loop -->
+      <span class="src-chip"><span class="sdot" style="background:#E1306C"></span>Instagram</span>
+      <span class="src-chip"><span class="sdot" style="background:#25F4EE"></span>TikTok</span>
+      <span class="src-chip"><span class="sdot" style="background:#FF0033"></span>YouTube</span>
+      <span class="src-chip"><span class="sdot" style="background:#FF4500"></span>Reddit</span>
+      <span class="src-chip"><span class="sdot" style="background:#E60023"></span>Pinterest</span>
+      <span class="src-chip"><span class="sdot" style="background:#1DB954"></span>Spotify</span>
+      <span class="src-chip"><span class="sdot" style="background:#251F28"></span>X</span>
+      <span class="src-chip"><span class="sdot" style="background:#101010"></span>Threads</span>
+      <span class="src-chip"><span class="sdot" style="background:#FF6719"></span>Substack</span>
+      <span class="src-chip"><span class="sdot" style="background:#02B875"></span>Medium</span>
+      <span class="src-chip"><span class="sdot" style="background:#25D366"></span>WhatsApp</span>
+      <span class="src-chip"><span class="sdot" style="background:#229ED9"></span>Telegram</span>
+      <span class="src-chip"><span class="sdot" style="background:#0A66C2"></span>LinkedIn</span>
+      <span class="src-chip"><span class="sdot" style="background:#FFFC00;box-shadow:inset 0 0 0 1px #d8d5a2"></span>Snapchat</span>
+      <span class="src-chip"><span class="sdot" style="background:#1877F2"></span>Facebook</span>
+      <span class="src-chip"><span class="sdot" style="background:#8E4A9E"></span>+ any link</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#E1306C"></span>Instagram</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#25F4EE"></span>TikTok</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#FF0033"></span>YouTube</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#FF4500"></span>Reddit</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#E60023"></span>Pinterest</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#1DB954"></span>Spotify</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#251F28"></span>X</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#101010"></span>Threads</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#FF6719"></span>Substack</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#02B875"></span>Medium</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#25D366"></span>WhatsApp</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#229ED9"></span>Telegram</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#0A66C2"></span>LinkedIn</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#FFFC00;box-shadow:inset 0 0 0 1px #d8d5a2"></span>Snapchat</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#1877F2"></span>Facebook</span>
+      <span class="src-chip" aria-hidden="true"><span class="sdot" style="background:#8E4A9E"></span>+ any link</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== HOW IT WORKS ============================== -->
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head center rv">
+      <span class="eyebrow"><span class="dot"></span> How it works</span>
+      <h2>Two taps. <span class="serif-i accent-word">That's the whole app.</span></h2>
+      <p>No app-switching, no copy-pasting links, no losing your place in the feed.</p>
+    </div>
+    <div class="steps">
+      <article class="step rv">
+        <span class="step-num" aria-hidden="true">1</span>
+        <span class="step-ico" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v13"/></svg>
+        </span>
+        <h3>Tap Share</h3>
+        <p>Spot something worth keeping — a reel, a recipe, an article. Tap Share like you always do, then choose Furl.</p>
+      </article>
+      <article class="step rv rv-d1">
+        <span class="step-num" aria-hidden="true">2</span>
+        <span class="step-ico" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/></svg>
+        </span>
+        <h3>Tap Save</h3>
+        <p>Furl's sheet pops up right where you are. File it into a folder — Recipes, Travel, Watch Later — or let it land in your Inbox.</p>
+      </article>
+      <article class="step rv rv-d2">
+        <span class="step-num" aria-hidden="true">3</span>
+        <span class="step-ico" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </span>
+        <h3>Find it again</h3>
+        <p>Every save arrives with its preview, title and source — searchable by title, notes and tags, even months later.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FEATURES ============================== -->
+<section class="section" id="features" style="padding-top:40px">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow"><span class="dot"></span> The library</span>
+      <h2>Everything you save, <span class="serif-i accent-word">together at last.</span></h2>
+    </div>
+
+    <div class="feature-row">
+      <div class="f-copy rv">
+        <span class="f-kicker">One beautiful library</span>
+        <h3>Reels, videos, articles &amp; notes — in one place.</h3>
+        <p>Every save arrives with its preview, title and source, ready to find again. Reels, videos, articles, products, podcasts, playlists, notes — Furl recognizes 50+ sources automatically.</p>
+        <ul class="f-points">
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Rich previews fetched automatically</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Quick notes, so you remember why you saved it</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Old bookmarks? Bulk import brings them over in one go</li>
+        </ul>
+      </div>
+      <div class="f-media rv rv-d1">
+        <div class="phone"><div class="phone-notch" aria-hidden="true"></div><div class="phone-screen"><img src="/assets/img/shot-home.webp" alt="Furl home screen showing 116 saves, recently saved cards and library folders" loading="lazy" width="720" height="1565"></div></div>
+      </div>
+    </div>
+
+    <div class="feature-row flip">
+      <div class="f-copy rv">
+        <span class="f-kicker">Tidy folders</span>
+        <h3>A tidy folder for everything.</h3>
+        <p>File each save as you make it — or sort later from your Inbox. Your library, your structure: Cooking, Travel, Watch Later, Gift Ideas, whatever fits your life.</p>
+        <ul class="f-points">
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>One tap files each save where it belongs</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>A private <b>Hidden</b> folder behind Face ID</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Inbox catches everything you haven't filed yet</li>
+        </ul>
+      </div>
+      <div class="f-media rv rv-d1">
+        <div class="phone"><div class="phone-notch" aria-hidden="true"></div><div class="phone-screen"><img src="/assets/img/shot-folders.webp" alt="Furl folder overview with categories like Cooking, Travel, Watch Later and Fitness" loading="lazy" width="720" height="1565"></div></div>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="f-copy rv">
+        <span class="f-kicker">Search</span>
+        <h3>Find anything in seconds.</h3>
+        <p>Search titles, your notes and your tags — even months later. That recipe you saved in March? Type "pasta" and it's back.</p>
+      </div>
+      <div class="f-media rv rv-d1">
+        <div class="phone"><div class="phone-notch" aria-hidden="true"></div><div class="phone-screen"><img src="/assets/img/shot-search.webp" alt="Furl search results for 'pasta' showing a saved garlic pasta recipe" loading="lazy" width="720" height="1565"></div></div>
+      </div>
+    </div>
+
+    <div class="feature-row flip">
+      <div class="f-copy rv">
+        <span class="f-kicker">What now?</span>
+        <h3>Actually revisit what you save.</h3>
+        <p>Ask "What now?" and let your library decide: pick a mood — What should I eat? What to watch tonight? — or roll the dice and rediscover a gem you'd forgotten.</p>
+      </div>
+      <div class="f-media rv rv-d1">
+        <div class="phone"><div class="phone-notch" aria-hidden="true"></div><div class="phone-screen"><img src="/assets/img/shot-whatnow.webp" alt="Furl's What now screen with Surprise me dice roll and mood cards" loading="lazy" width="720" height="1565"></div></div>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="f-copy rv">
+        <span class="f-kicker">Insight</span>
+        <h3>See what you save — and what you actually use.</h3>
+        <p>Insight shows what you've opened and what's still collecting dust, plus what you've been into lately. Gentle nudges resurface saves you've never opened.</p>
+      </div>
+      <div class="f-media rv rv-d1">
+        <div class="phone"><div class="phone-notch" aria-hidden="true"></div><div class="phone-screen"><img src="/assets/img/shot-insight.webp" alt="Furl Insight screen showing activation stats and top categories" loading="lazy" width="720" height="1565"></div></div>
+      </div>
+    </div>
+
+    <div class="feature-row flip">
+      <div class="f-copy rv">
+        <span class="f-kicker">Notes, tags &amp; reminders</span>
+        <h3>Remember why. Revisit on time.</h3>
+        <p>Capture why you saved it — "Make this for Friday, double the sauce" — add tags, and get a gentle reminder to revisit or share it exactly when you need to.</p>
+      </div>
+      <div class="f-media rv rv-d1">
+        <div class="phone"><div class="phone-notch" aria-hidden="true"></div><div class="phone-screen"><img src="/assets/img/shot-detail.webp" alt="Furl save detail with note, tags and remind-me actions" loading="lazy" width="720" height="1565"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PRIVACY ============================== -->
+<section class="section" id="privacy" style="padding-top:20px">
+  <div class="wrap">
+    <div class="privacy-band rv">
+      <div class="pb-blob pb-1" aria-hidden="true"></div>
+      <div class="pb-blob pb-2" aria-hidden="true"></div>
+      <span class="eyebrow" style="background:rgba(255,255,255,.14);color:#fff"><span class="dot"></span> Private by default</span>
+      <h2>Yours, <span class="serif-i" style="color:var(--gold)">privately.</span></h2>
+      <p class="lede">Furl isn't another feed fighting for your attention. It's your library — quiet, local and entirely yours.</p>
+      <div class="pb-grid">
+        <div class="pb-item rv">
+          <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F0B24A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5S20 17 20 21"/><path d="m2 2 20 20" opacity="0"/></svg>No account</b>
+          <span>No sign-up, no password, no profile. Open the app and start saving.</span>
+        </div>
+        <div class="pb-item rv rv-d1">
+          <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F0B24A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 10 8 10 8a18.5 18.5 0 0 1-2.16 3.19M6.61 6.61A13.5 13.5 0 0 0 2 12s3 8 10 8a9.74 9.74 0 0 0 5.39-1.61"/><path d="m2 2 20 20"/></svg>No tracking</b>
+          <span>No ads, no tracking you around the web, no selling your attention.</span>
+        </div>
+        <div class="pb-item rv rv-d2">
+          <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F0B24A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg>On your device</b>
+          <span>Your library lives on your phone — and is quietly backed up to iCloud.</span>
+        </div>
+        <div class="pb-item rv rv-d3">
+          <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F0B24A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Hidden folder</b>
+          <span>Some saves are just for you — locked behind Face&nbsp;ID.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PRICING ============================== -->
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="section-head center rv">
+      <span class="eyebrow"><span class="dot"></span> Pricing</span>
+      <h2>Free to start. <span class="serif-i accent-word">Fair forever.</span></h2>
+      <p>Every feature is included from day one. Pro simply removes the save limit when you outgrow it.</p>
+    </div>
+    <div class="plans">
+      <article class="plan rv">
+        <div class="plan-name">Free</div>
+        <div class="plan-price">$0</div>
+        <div class="plan-sub">Your first 100 saves — free, forever.</div>
+        <ul>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Every feature included</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Folders, search, notes &amp; reminders</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>100 saves, no time limit</li>
+        </ul>
+      </article>
+      <article class="plan featured rv rv-d1">
+        <div class="plan-name">Pro Yearly <span class="plan-tag">Most popular</span></div>
+        <div class="plan-price">$4.99<small>/year</small></div>
+        <div class="plan-sub">About $0.42 a month.</div>
+        <ul>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Unlimited saves</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Everything in Free</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Cancel anytime in your app store</li>
+        </ul>
+      </article>
+      <article class="plan rv rv-d2">
+        <div class="plan-name">Lifetime <span class="plan-tag gold">Best value</span></div>
+        <div class="plan-price">$49.99<small> once</small></div>
+        <div class="plan-sub">Pay once, yours forever.</div>
+        <ul>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Unlimited saves, forever</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>No subscription, no renewals</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8E4A9E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>All future updates included</li>
+        </ul>
+      </article>
+    </div>
+    <p class="pricing-note rv">Prices in USD; may vary by region. Purchases are processed by the App Store / Google Play.</p>
+  </div>
+</section>
+
+<!-- ============================== FAQ ============================== -->
+<section class="section" id="faq" style="padding-top:20px">
+  <div class="wrap">
+    <div class="section-head center rv">
+      <span class="eyebrow"><span class="dot"></span> FAQ</span>
+      <h2>Questions, <span class="serif-i accent-word">answered.</span></h2>
+    </div>
+    <div class="faq rv">
+      <details>
+        <summary>Is Furl free? <span class="plus">+</span></summary>
+        <p class="a">Yes — your first 100 saves are free, forever. Furl Pro unlocks unlimited saves with a small yearly subscription or a one-time lifetime purchase.</p>
+      </details>
+      <details>
+        <summary>Do I need an account? <span class="plus">+</span></summary>
+        <p class="a">No. Furl has no accounts and no sign-in. Your library lives on your device and is quietly backed up — to iCloud on iPhone and via Android's automatic backup on Android.</p>
+      </details>
+      <details>
+        <summary>What can I save with Furl? <span class="plus">+</span></summary>
+        <p class="a">Anything you can share: reels, videos, articles, products, podcasts, playlists and notes. Furl recognizes 50+ sources automatically — Instagram, TikTok, YouTube, Reddit, Pinterest, Spotify, X and many more — and files each save with its preview, title and source.</p>
+      </details>
+      <details>
+        <summary>How does saving work? <span class="plus">+</span></summary>
+        <p class="a">Tap Share in any app, then tap Save. Furl's share sheet appears right where you are — no app-switching, no losing your place in the feed. Pick a folder as you save, or let it land in your Inbox and sort later.</p>
+      </details>
+      <details>
+        <summary>Is my data private? <span class="plus">+</span></summary>
+        <p class="a">Yes. Furl is private by default: no account, no feed, and no tracking you around the web. What you save is stored on your device, and a private Hidden folder behind Face ID keeps some saves just for you. Read the full <a href="/privacy">Privacy Policy</a>.</p>
+      </details>
+      <details>
+        <summary>Which platforms does Furl support? <span class="plus">+</span></summary>
+        <p class="a">Furl is built for iPhone, iPad and Android phones and tablets. It's launching soon on the App Store and Google Play — the buttons above will point to the listing the moment it's live.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FINAL CTA ============================== -->
+<section class="cta-final" id="get">
+  <div class="hero-bg" aria-hidden="true" style="z-index:-1">
+    <div class="blob blob-b" style="top:auto;bottom:-120px;left:-120px"></div>
+    <div class="blob blob-a" style="width:380px;height:380px;top:-80px"></div>
+  </div>
+  <div class="wrap">
+    <h2 class="rv">Stop losing what you <span class="serif-i accent-word">love.</span></h2>
+    <p class="rv rv-d1">Furl is launching soon on iPhone and Android.<br>Your first 100 saves are free, forever.</p>
+    <div class="store-badges rv rv-d2">
+      <a class="badge" href="https://apps.apple.com/" target="_blank" rel="noopener" aria-label="Download on the App Store (coming soon)">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c-.03-2.89 2.36-4.28 2.47-4.35-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-1-1.94.03-3.72 1.13-4.72 2.86-2.01 3.49-.51 8.66 1.45 11.49.96 1.39 2.1 2.94 3.6 2.89 1.44-.06 1.99-.93 3.73-.93s2.23.93 3.76.9c1.55-.03 2.53-1.41 3.48-2.8 1.09-1.61 1.54-3.17 1.57-3.25-.03-.02-3-1.15-3.02-4.59zM14.17 4.04c.79-.96 1.33-2.29 1.18-3.62-1.14.05-2.53.76-3.35 1.72-.73.85-1.38 2.21-1.21 3.51 1.28.1 2.58-.65 3.38-1.61z"/></svg>
+        <span class="b-txt"><span class="b-top">Coming soon on the</span><span class="b-bot">App Store</span></span>
+      </a>
+      <a class="badge" href="https://play.google.com/store/apps" target="_blank" rel="noopener" aria-label="Get it on Google Play (coming soon)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#01D3FE" d="M3.6 1.8 13.7 12 3.6 22.2c-.36-.2-.6-.59-.6-1.08V2.88c0-.49.24-.88.6-1.08z"/><path fill="#FFCE00" d="m17.1 8.6 -3.4 3.4 -10.1-10.2c.16-.09.35-.14.55-.14.22 0 .45.06.67.19l12.28 6.75z"/><path fill="#F63449" d="M17.1 15.4 4.82 22.15c-.22.13-.45.19-.67.19-.2 0-.39-.05-.55-.14l10.1-10.2 3.4 3.4z"/><path fill="#00E370" d="m20.75 13.39 -3.65 2.01-3.4-3.4 3.4-3.4 3.65 2.01c1.03.57 1.03 2.21 0 2.78z"/></svg>
+        <span class="b-txt"><span class="b-top">Coming soon on</span><span class="b-bot">Google Play</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo" href="/" aria-label="Furl home"><picture><source srcset="/assets/img/wordmark.webp" media="(prefers-color-scheme: dark)"><img src="/assets/img/wordmark-light.webp" alt="Furl" width="59" height="30"></picture></a>
+        <p>One private library for everything you save. Made by Protalogic.</p>
+      </div>
+      <nav class="footer-col" aria-label="Product">
+        <b>Product</b>
+        <a href="/#features">Features</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#download">Download</a>
+      </nav>
+      <nav class="footer-col" aria-label="Company">
+        <b>Company</b>
+        <a href="/contact">Contact</a>
+        <a href="mailto:protalogic@gmail.com">Support</a>
+      </nav>
+      <nav class="footer-col" aria-label="Legal">
+        <b>Legal</b>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms &amp; Conditions</a>
+      </nav>
+    </div>
+    <div class="footer-base">
+      <span>© <span data-year>2026</span> Protalogic. All rights reserved.</span>
+      <span>Furl — Save it. Find it. Use it.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
