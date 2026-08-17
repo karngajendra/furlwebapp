@@ -191,14 +191,37 @@ html.js .rv.in{opacity:1;transform:none;}
   border-radius:44px;
   background:#17111B;
   padding:11px;
-  box-shadow:var(--shadow-pop),inset 0 0 0 1.5px rgba(255,255,255,.09);
+  box-shadow:var(--shadow-pop);
   position:relative;
+  isolation:isolate;
+  outline:1px solid transparent;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+}
+/* subtle metallic edge highlight as a border overlay (borders antialias
+   under rotation; inset box-shadow rings do not) */
+.phone::before{
+  content:"";position:absolute;inset:0;border-radius:44px;
+  border:1.5px solid rgba(255,255,255,.09);
+  pointer-events:none;z-index:21;
 }
 .phone-screen{
   border-radius:34px;overflow:hidden;position:relative;
   background:var(--sheet-bg);
   aspect-ratio:1206/2622;
+  transform:translateZ(0);
 }
+/* bezel-colored ring drawn OVER the clipped screen edge — hides the aliased
+   (zigzag) clip boundary that shows when the rotated phone rasterizes.
+   A border (not box-shadow) — borders stay antialiased under transforms. */
+.phone-screen::after{
+  content:"";position:absolute;inset:-4px;border-radius:38px;
+  border:5px solid #17111B;
+  pointer-events:none;z-index:20;
+}
+/* rasterize the rotated phones on their own GPU layer, then composite with
+   filtering — kills sawtooth edges on the rotation */
+.stage .phone-front,.stage .phone-back{will-change:transform;}
 .phone-notch{
   position:absolute;top:22px;left:50%;transform:translateX(-50%);
   width:86px;height:25px;border-radius:999px;background:#17111B;z-index:12;
@@ -329,7 +352,7 @@ html.js .rv.in{opacity:1;transform:none;}
 .marquee:hover .marquee-track{animation-play-state:paused;}
 .marquee-2{margin-top:12px;}
 .marquee-track.rev{animation-direction:reverse;animation-duration:52s;}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-25%)}}
 .src-chip{
   display:inline-flex;align-items:center;gap:9px;white-space:nowrap;
   background:var(--card);border:1px solid var(--line);
@@ -338,7 +361,7 @@ html.js .rv.in{opacity:1;transform:none;}
 }
 .src-chip img{width:22px;height:22px;border-radius:26%;flex:none;box-shadow:0 1px 3px rgba(37,31,40,.14);}
 .src-chip .sdot{width:9px;height:9px;border-radius:50%;flex:none;margin-left:8px;}
-@media (prefers-reduced-motion: reduce){.marquee-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center;}}
+@media (prefers-reduced-motion: reduce){.marquee-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center;}.src-chip[aria-hidden]{display:none;}}
 
 /* ---------- how it works ---------- */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:54px;}
