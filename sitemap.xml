@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://getfurl.web.app/</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://www.thefurlapp.com/</loc>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://getfurl.web.app/contact</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://www.thefurlapp.com/contact</loc>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://getfurl.web.app/privacy</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://www.thefurlapp.com/privacy</loc>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://getfurl.web.app/terms</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://www.thefurlapp.com/terms</loc>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
